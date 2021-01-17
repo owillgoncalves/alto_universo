@@ -2,18 +2,19 @@
   <q-item
     clickable
     tag="a"
-    :href="link"
+    :to="link"
   >
     <q-item-section
       v-if="icon"
       avatar
+      class="text-deep-purple"
     >
-      <q-icon :name="icon" />
+      <q-icon :name="icon"  />
     </q-item-section>
 
     <q-item-section>
-      <q-item-label>{{ title }}</q-item-label>
-      <q-item-label caption>
+      <q-item-label class="text-deep-purple">{{ title }}</q-item-label>
+      <q-item-label caption >
         {{ caption }}
       </q-item-label>
     </q-item-section>

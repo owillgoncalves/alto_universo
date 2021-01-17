@@ -28,7 +28,7 @@
       <q-list>
         <q-item-label
           header
-          class="text-grey-8"
+          class="text-deep-purple"
         >
           Para Você
         </q-item-label>
@@ -41,7 +41,7 @@
       <q-list>
         <q-item-label
           header
-          class="text-grey-8"
+          class="text-deep-purple"
         >
           Para Empresas
         </q-item-label>
@@ -54,7 +54,7 @@
       <q-list>
         <q-item-label
           header
-          class="text-grey-8"
+          class="text-deep-purple"
         >
           Para Escolas
         </q-item-label>
@@ -86,7 +86,7 @@ const personalLinks = [
     title: 'Aprenda algo novo',
     caption: 'Voe alto com cursos gratuitos',
     icon: 'school',
-    link: '/courses'
+    link: '/'
   },
   {
     title: 'Encontre um trampo',

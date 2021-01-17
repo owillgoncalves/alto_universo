@@ -1,5 +1,5 @@
 <template>
-  <div class="fullscreen bg-purple text-white text-center q-pa-md flex flex-center">
+  <div class="fullscreen bg-deep-purple text-white text-center q-pa-md flex flex-center">
     <div>
       <div style="font-size: 7vh">
         Funcionalidade em implementação
@@ -12,7 +12,7 @@
       <q-btn
         class="q-mt-xl"
         color="white"
-        text-color="purple"
+        text-color="deep-purple"
         unelevated
         to="/"
         label="Voltar"
