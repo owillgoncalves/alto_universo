@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: "PageIndex",
+  name: "Courses",
   data() {
     return {
       courses: [
