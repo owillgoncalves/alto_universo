@@ -35,6 +35,11 @@ const routes = [
     children: [{ path: "", component: () => import("pages/RateStudent.vue") }]
   },
   {
+    path: "/not-working",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/NotWorking.vue") }]
+  },
+  {
     path: "*",
     component: () => import("pages/Error404.vue")
   }
