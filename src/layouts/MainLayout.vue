@@ -86,7 +86,7 @@ const personalLinks = [
     title: 'Aprenda algo novo',
     caption: 'Voe alto com cursos gratuitos',
     icon: 'school',
-    link: '/'
+    link: '/courses'
   },
   {
     title: 'Encontre um trampo',
@@ -101,13 +101,13 @@ const businessLinks = [
     title: 'Venda seu peixe',
     caption: 'Divulgue um produto ou serviço',
     icon: 'store',
-    link: '/error'
+    link: '/new-product'
   },
   {
     title: 'Contrate um jovem',
     caption: 'Anuncie uma vaga de emprego',
     icon: 'work',
-    link: '/error'
+    link: '/new-job'
   },
 ];
 
@@ -116,13 +116,13 @@ const schoolLinks = [
     title: 'Ensine e empodere',
     caption: 'Anuncie um curso gratuito',
     icon: 'school',
-    link: '/error'
+    link: '/new-course'
   },
   {
     title: 'Avalie e impulsione',
     caption: 'Valide o aprendizado do aluno',
     icon: 'verified',
-    link: '/error'
+    link: '/rate-student'
   },
 ];
 
@@ -140,5 +140,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass">
+h4
+  width: 100%
+  padding: 0 10px
 </style>

@@ -1,5 +1,6 @@
 <template>
   <q-page class="flex full-width row wrap justify-center items-start content-start">
+    <h4 class="text-deep-purple">Anúncios locais</h4>
     <q-card class="my-card" :key="product.id" v-for="product in products">
       <q-img class="my-image" :src="require('../assets/images/marketplace/'+ product.id + '.png')" />
 
