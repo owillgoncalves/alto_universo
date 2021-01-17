@@ -5,7 +5,7 @@
       <q-card-section horizontal class="my-card-content">
         <q-card-section class="q-pt-xs">
           <div class="text-overline">{{ course.school }}</div>
-          <div class="text-h5 q-mt-sm q-mb-xs">{{ course.title }}</div>
+          <div class="text-h5 q-mt-sm q-mb-xs text-deep-purple">{{ course.title }}</div>
           <div class="text-caption text-grey">
             {{ course.description }}
           </div>
@@ -22,7 +22,7 @@
       <q-separator />
 
       <q-card-actions>
-        <q-btn flat round icon="school" />
+        <q-btn flat round icon="school" class="text-deep-purple" />
         <q-btn flat>
           {{ course.type }}
         </q-btn>
