@@ -2,7 +2,6 @@
   <q-item
     clickable
     tag="a"
-    target="_blank"
     :href="link"
   >
     <q-item-section
@@ -23,7 +22,7 @@
 
 <script>
 export default {
-  name: 'EssentialLink',
+  name: 'MenuLink',
   props: {
     title: {
       type: String,

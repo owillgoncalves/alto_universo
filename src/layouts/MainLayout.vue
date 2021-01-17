@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="bg-deep-purple">
         <q-btn
           flat
           dense
@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Seja bem vindo
         </q-toolbar-title>
 
         <div>Alto Universo</div>
@@ -30,10 +30,36 @@
           header
           class="text-grey-8"
         >
-          Essential Links
+          Para Você
         </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
+        <menu-link
+          v-for="link in personalLinks"
+          :key="link.title"
+          v-bind="link"
+        />
+      </q-list>
+      <q-list>
+        <q-item-label
+          header
+          class="text-grey-8"
+        >
+          Para Empresas
+        </q-item-label>
+        <menu-link
+          v-for="link in businessLinks"
+          :key="link.title"
+          v-bind="link"
+        />
+      </q-list>
+      <q-list>
+        <q-item-label
+          header
+          class="text-grey-8"
+        >
+          Para Escolas
+        </q-item-label>
+        <menu-link
+          v-for="link in schoolLinks"
           :key="link.title"
           v-bind="link"
         />
@@ -47,61 +73,72 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+import MenuLink from 'src/components/MenuLink.vue';
 
-const linksData = [
+const personalLinks = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
+    title: 'Lanche ou roupa nova?',
+    caption: 'Produtos e serviços na região',
+    icon: 'store',
+    link: '/'
+  },
+  {
+    title: 'Aprenda algo novo',
+    caption: 'Voe alto com cursos gratuitos',
     icon: 'school',
-    link: 'https://quasar.dev'
+    link: '/courses'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: 'Encontre um trampo',
+    caption: 'Seu próximo passo na carreira',
+    icon: 'work',
+    link: '/jobs'
+  },
+];
+
+const businessLinks = [
+  {
+    title: 'Venda seu peixe',
+    caption: 'Divulgue um produto ou serviço',
+    icon: 'store',
+    link: '/error'
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    title: 'Contrate um jovem',
+    caption: 'Anuncie uma vaga de emprego',
+    icon: 'work',
+    link: '/error'
+  },
+];
+
+const schoolLinks = [
+  {
+    title: 'Ensine e empodere',
+    caption: 'Anuncie um curso gratuito',
+    icon: 'school',
+    link: '/error'
   },
   {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
+    title: 'Avalie e impulsione',
+    caption: 'Valide o aprendizado do aluno',
+    icon: 'verified',
+    link: '/error'
   },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
 ];
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink },
+  components: { MenuLink },
   data () {
     return {
       leftDrawerOpen: false,
-      essentialLinks: linksData
+      personalLinks: personalLinks,
+      businessLinks: businessLinks,
+      schoolLinks: schoolLinks,
     }
   }
 }
 </script>
+
+<style>
+</style>

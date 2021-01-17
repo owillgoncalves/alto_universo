@@ -1,21 +1,21 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+  <div class="fullscreen bg-purple text-white text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
-        404
+      <div style="font-size: 7vh">
+        Funcionalidade em implementação
       </div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
+      <div class="text-h5" style="opacity:.4">
+        Como o objetivo era mostrar a jornada do usuário comum, algumas funcionalidades não foram inclusas no projeto.
       </div>
 
       <q-btn
         class="q-mt-xl"
         color="white"
-        text-color="blue"
+        text-color="purple"
         unelevated
         to="/"
-        label="Go Home"
+        label="Voltar"
         no-caps
       />
     </div>
