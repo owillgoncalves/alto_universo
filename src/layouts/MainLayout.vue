@@ -67,13 +67,13 @@ const businessLinks = [
     title: "Venda seu peixe",
     caption: "Divulgue um produto ou serviço",
     icon: "store",
-    link: "/not-working",
+    link: "/new-product",
   },
   {
     title: "Contrate um jovem",
     caption: "Anuncie uma vaga de emprego",
     icon: "work",
-    link: "/not-working",
+    link: "/new-job",
   },
 ];
 
@@ -82,7 +82,7 @@ const schoolLinks = [
     title: "Ensine e empodere",
     caption: "Anuncie um curso gratuito",
     icon: "school",
-    link: "/not-working",
+    link: "/new-course",
   },
   {
     title: "Avalie e impulsione",
