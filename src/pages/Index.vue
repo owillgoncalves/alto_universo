@@ -96,7 +96,6 @@ export default {
           price: "25",
           store: "Casa do Burgão",
           description: "Hamburguer artesanal com molho caseiro. Acompanha refrigerante",
-          image: "",
         },
       ],
     };
