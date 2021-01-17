@@ -54,7 +54,7 @@ export default {
       stars: 4,
       products: [
         {
-          id: '01',
+          id: 'm01',
           name: 'Matador',
           distance: '1,5',
           rate: '4',
